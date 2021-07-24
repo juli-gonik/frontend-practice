@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+  display: flex;
+  width: clamp(850px, 70vw,1000px);
+  /* width: 70vw;
+  max-width: 1440px; */
+  overflow: hidden;
+  border-radius: 8px;
+  /* height: auto; */
+}
+
+.container section {
+  background-color: hsl(244, 38%, 16%);
+  color:hsla(0, 0%, 100%, 0.6);
+  padding: 72px 110px 72px 72px;
+  width: 51.75%;
+  display: flex;
+  flex-direction: column;
+}
+.container section h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+.container section h1 {
+  font-size: calc(1rem + 2vh);
+}
+
+.container section h1, .container section h2   {
+  color: hsl(0, 0%, 100%);
+}
+
+.container section p {
+  margin-top: 25px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  /* font-size: calc(0.5rem + 1vh); */
+  line-height: 1.65;
+}
+
+.container section ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.container section ul li {
+  width: 100px;
+}
+
+.container section h5 {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.container .img-container {
+  width: 48.75%;
+  position: relative;
+  background-size: cover;  
+  filter: sepia(100%) brightness(73%) hue-rotate(234deg) saturate(106%) contrast(130%);
+}
+.container .img-container img {
+  vertical-align: middle;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 446px;  
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column-reverse;
+    width: 90vw;
+    text-align: center;
+    margin: 80px auto;
+  }
+  .container section {
+    width: 100%;
+    padding: 35px;
+  }
+
+  .container section h1 {
+    font-size: 1.75rem;
+  }
+  
+  .container section ul {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .container section ul > li{
+    margin: 30px 0 0;
+  }
+
+  .container .img-container {
+    width: 100%;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;  
+  }
+}
