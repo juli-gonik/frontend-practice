@@ -18,11 +18,8 @@ body {
 .container {
   display: flex;
   width: clamp(850px, 70vw,1000px);
-  /* width: 70vw;
-  max-width: 1440px; */
   overflow: hidden;
   border-radius: 8px;
-  /* height: auto; */
 }
 
 .container section {
@@ -49,7 +46,6 @@ body {
   margin-top: 25px;
   color: hsla(0, 0%, 100%, 0.75);
   font-size: 15px;
-  /* font-size: calc(0.5rem + 1vh); */
   line-height: 1.65;
 }
 
@@ -117,8 +113,6 @@ img {
     width: 100%;
   }
   img {
-    object-fit: cover;
-    width: 100%;
     height: auto;  
   }
 }
